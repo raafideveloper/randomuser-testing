@@ -1,0 +1,84 @@
+.content-section {
+  padding: 0 10px;
+  margin-right: 5px;
+  float: left;
+}
+
+/* Remove extra left and right margins, due to padding */
+.content {
+  display: inline-block;
+  margin: 0 -5px;
+}
+
+.loading-section {
+  text-align: center
+}
+
+.user-picture {
+  text-align: center
+}
+
+.user-section {
+  margin-top: 50px;
+  padding-left: 30px
+}
+
+/* Style the counter cards */
+.card {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  width: 350px;
+  height: 370px;
+}
+
+.note {
+  position: fixed;
+  margin-top: 40px;
+  margin-left: 60px;
+  line-height: 1.77;
+}
+
+.load-btn {
+  padding: 15px 32px;
+  position: relative;
+  left: 2%;
+  transform: translateY(-90px) rotate(270deg);
+  transform-origin: left top 0;
+}
+
+/* Responsive content-sections */
+@media screen and (max-width: 375px) {
+  .content{
+    display: block
+  }
+  .content-section {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+  }
+  .card {
+    text-align: left;
+    height: 150px;
+  }
+  .user-picture {
+    float: left;
+    margin-right: 5px;
+  }
+  .user-section {
+    line-height: 1.5;
+    font-size: 10px;
+    padding-left: 0;
+    margin-top: 0;
+  }
+  .load-btn {
+    position: initial;
+    transform: initial;
+    position: relative;
+    left: 30%;
+  }
+  .note {
+    display: none;
+  }
+}
